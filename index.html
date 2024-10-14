@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina principal</title>
+    <title>Página Completa</title>
+    <link rel="stylesheet" href="css\styles.css"> <!-- Enlazando el archivo CSS -->
 </head>
 <body>
-    <h1>detalle pagina</h1>
+
+    <div class="container">
+        <!-- Caja superior: texto e imagen -->
+        <div class="header">
+            <div class="header-text">
+                <h1>HOJA DE VIDA</h1>
+                <p>Tecnólogo en programacion estudiante de octavo semestre de ingeniera de sisitemas, con facilidad en el
+                    desempeño de trabajo en equipo.</p>
+            </div>
+            <!-- Aquí colocamos la imagen dentro del círculo -->
+            <div class="circle">
+                <img src="css\img\foto.jpg" alt="Imagen" class="circle-img">
+            </div>
+        </div>
+
+        <!-- Segunda fila: video y tres imágenes pequeñas -->
+        <div class="media-section">
+            <div class="video-box">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JU2w1m2AClQ?si=go51mApEZCfW7aeq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="small-images">
+                <div class="img-box">
+                    <img src="css\img\arbol.jpg" alt="Small Image 1" width="300" height="100">
+                </div>
+                <div class="img-box">
+                    <img src="css\img\desierto.jpg" alt="Small Image 2"width="300" height="100">
+                </div>
+                <div class="img-box">
+                    <img src="css\img\montanajpg.jpg" alt="Small Image 3"width="300" height="100">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tercera fila con tres cajas de texto -->
+        <div class="text-row">
+            <div class="text-box">
+                <p>Contenido informativo sobre nuestros servicios.</p>
+            </div>
+            <div class="text-box">
+                <p>Noticias recientes sobre la empresa.</p>
+            </div>
+            <div class="text-box">
+                <p>Artículos y recursos útiles para nuestros clientes.</p>
+            </div>
+        </div>
+
+        <!-- Cuarta fila con dos cajas grandes -->
+        <div class="large-row">
+            <div class="large-box">
+                <h2>Sobre Nosotros</h2>
+                <p>Conozca más sobre nuestra misión y valores.</p>
+            </div>
+            <div class="large-box">
+                <h2>Contacto</h2>
+                <p>Encuentra aquí la forma de ponerte en contacto con nosotros.</p>
+            </div>
+        </div>
+
+        <!-- Footer con tres columnas -->
+        <footer>
+            <div class="footer-column">
+                <a href="https://www.nuestraempresa.com">Inicio</a>
+            </div>
+            <div class="footer-column">
+                <a href="https://www.nuestraempresa.com/about">Acerca de</a>
+            </div>
+            <div class="footer-column">
+                <a href="https://www.nuestraempresa.com/contact">Contacto</a>
+            </div>
+        </footer>
+
+    </div>
+
 </body>
 </html>
