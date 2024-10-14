@@ -18,6 +18,9 @@ function fetchData() {
             document.getElementById('dataTable').style.border = "2px solid green";
             document.getElementById('fetchData').textContent = 'Datos cargados';  // Cambiamos el texto del botón
 
+            document.getElementById('dataTable').style.border = "2px solid green";
+            document.getElementById('fetchData').textContent = 'Datos cargados';  // Cambiamos el texto del botón
+
             // Usamos data.forEach para recorrer cada post
             data.forEach(post => {
                 const row = document.createElement('tr');  // Creamos una fila para la tabla
