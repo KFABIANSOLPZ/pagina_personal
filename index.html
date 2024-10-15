@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Completa</title>
-    <link rel="stylesheet" href="css\styles.css"> <!-- Enlazando el archivo CSS -->
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\styles.css"> <!-- Enlazamos el archivo CSS -->
 </head>
 <body>
 
@@ -14,15 +13,11 @@
         <div class="header">
             <div class="header-text">
                 <h1>HOJA DE VIDA</h1>
-                <p>Tecnólogo en programacion estudiante de octavo semestre de ingeniera de sisitemas, con facilidad en el
-                    desempeño de trabajo en equipo.</p>
-                    <h2>HOJA DE VIDA</h2>
-                    <p>Tecnólogo en programacion estudiante de octavo semestre de ingeniera de sisitemas, con facilidad en el
-                        desempeño de trabajo en equipo.</p>    
+                <p>Tecnólogo en programación, estudiante de octavo semestre de ingeniería de sistemas, con facilidad para el trabajo en equipo.</p>
             </div>
             <!-- Aquí colocamos la imagen dentro del círculo -->
             <div class="circle">
-                <img src="css\img\foto.jpg" alt="Imagen" class="circle-img">
+                <img src="css/img/foto.jpg" alt="Imagen" class="circle-img">
             </div>
         </div>
 
@@ -33,13 +28,13 @@
             </div>
             <div class="small-images">
                 <div class="img-box">
-                    <img src="css\img\arbol.jpg" alt="Small Image 1" width="300" height="100">
+                    <img src="css/img/arbol.jpg" alt="Small Image 1" width="300" height="100">
                 </div>
                 <div class="img-box">
-                    <img src="css\img\desierto.jpg" alt="Small Image 2"width="300" height="100">
+                    <img src="css/img/desierto.jpg" alt="Small Image 2" width="300" height="100">
                 </div>
                 <div class="img-box">
-                    <img src="css\img\montanajpg.jpg" alt="Small Image 3"width="300" height="100">
+                    <img src="css/img/montanajpg.jpg" alt="Small Image 3" width="300" height="100">
                 </div>
             </div>
         </div>
@@ -69,6 +64,31 @@
             </div>
         </div>
 
+        <!-- Botón para obtener los datos -->
+        <div class="fetch-section">
+            <button id="fetchData">Obtener datos</button>
+        </div>
+
+        <!-- Cuadro de búsqueda centrado -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar por ID" />
+            <button id="searchBtn">Buscar</button>
+        </div>
+
+        <!-- Tabla para mostrar los datos obtenidos de la API -->
+        <table id="dataTable" style="display: none;">  <!-- Inicialmente oculto -->
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Contenido</th>
+                </tr>
+            </thead>
+            <tbody id="dataContainer">
+                <!-- Los datos se insertarán aquí -->
+            </tbody>
+        </table>
+
         <!-- Footer con tres columnas -->
         <footer>
             <div class="footer-column">
@@ -82,7 +102,11 @@
             </div>
         </footer>
 
+        <!-- Audio para sonido de cargado -->
+        <audio id="loadingSound" src="sounds/loading-sound.mp3"></audio>
+
     </div>
 
+    <script src="js\fetch.js"></script> <!-- Enlazamos el archivo JavaScript -->
 </body>
 </html>
